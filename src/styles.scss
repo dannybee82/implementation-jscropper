@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+// Cropper JS
+@use '@angular/material' as mat;
+@include mat.core();
+//Use material-2 styles: @import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+@import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+@import '../node_modules/cropperjs/dist/cropper.min.css'; 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+//Bug in Cropper-JS for release -> fix:
+.cropper-view-box {
+    border-radius: 50%;
+}
+
+.pb-1 {
+    padding-bottom: 16px;
+}
+
+.p-1 {
+    padding: 16px;
+}
+
+.ms-1 {
+    margin-left: 16px;
+}

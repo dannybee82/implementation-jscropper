@@ -1,0 +1,33 @@
+<div class="container p-1"> 
+    <div class="row pb-1">
+        <app-cropbox-settings />
+    </div>
+    <div class="row pb-1">
+        <app-open-file 
+            [buttonText]="'Select Image File'" 
+            [fileExtensions]="'image/jpeg,image/jpg,image/png,image/gif'" 
+            (selectedFile)="getFile($event)">
+        </app-open-file>
+    </div>
+    <div class="row">
+        @if(this.previewImageData() !== '') {
+            <img 
+                class="preview-image" 
+                [src]="this.previewImageData()" 
+                alt="Preview Image" 
+                title="preview Image"
+            />
+            
+            <button                 
+                type="button" 
+                class="ms-1"
+                mat-stroked-button 
+                color="warn" 
+                (click)="this.removeImage()" 
+                matTooltip="Remove Image">
+                    <mat-icon>remove_circle</mat-icon>
+                    <span>Remove Image</span>
+            </button>                       
+          }
+    </div>
+</div>

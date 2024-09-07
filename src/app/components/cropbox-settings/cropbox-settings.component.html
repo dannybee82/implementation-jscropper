@@ -1,0 +1,15 @@
+<div class="container p-1">
+    <form [formGroup]="form">
+        <h3>Cropbox size</h3>
+        <div class="row">            
+            <mat-form-field appearance="outline">
+                <label>Minimum size</label>
+                <input type="number" matInput formControlName="minimumSize" [min]="1">    
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <label>Maximum size</label>
+                <input type="number" matInput formControlName="maximumSize" [min]="1">
+            </mat-form-field>
+        </div>
+    </form>
+</div>
