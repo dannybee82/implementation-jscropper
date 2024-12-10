@@ -1,6 +1,6 @@
 # ImplementationJscropper
 
-\- Angular 18 with cropperjs.
+\- Angular 19 with cropperjs.
 
 \- See the root folder for example images.
 

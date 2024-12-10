@@ -1,5 +1,5 @@
 import { Component, OnInit, inject } from '@angular/core';
-import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, UntypedFormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, UntypedFormGroup } from '@angular/forms';
 import { AllMatModules } from '../../all-mat-modules.module';
 import { CropBoxService } from '../../services/crop-box.service';
 import { MatInputModule } from '@angular/material/input';

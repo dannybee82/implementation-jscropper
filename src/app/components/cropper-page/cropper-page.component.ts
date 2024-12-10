@@ -11,7 +11,6 @@ import { CropboxSettingsComponent } from '../cropbox-settings/cropbox-settings.c
   standalone: true,
   imports: [
     OpenFileComponent,
-    ImageCropperComponent,
     CropboxSettingsComponent,
     AllMatModules
   ],
