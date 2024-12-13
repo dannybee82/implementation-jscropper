@@ -8,7 +8,6 @@ import { CropboxSettingsComponent } from '../cropbox-settings/cropbox-settings.c
 
 @Component({
   selector: 'app-cropper-page',
-  standalone: true,
   imports: [
     OpenFileComponent,
     CropboxSettingsComponent,

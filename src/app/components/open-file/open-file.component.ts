@@ -5,7 +5,6 @@ import { AllMatModules } from '../../all-mat-modules.module';
   selector: 'app-open-file',
   templateUrl: './open-file.component.html',
   styleUrls: ['./open-file.component.scss'],
-  standalone: true,
   imports: [
     AllMatModules
   ]

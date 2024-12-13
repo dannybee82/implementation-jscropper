@@ -10,7 +10,6 @@ import { CropBoxService } from '../../services/crop-box.service';
   selector: 'app-image-cropper',
   templateUrl: './image-cropper.component.html',
   styleUrls: ['./image-cropper.component.scss'],
-  standalone: true,
   imports: [AllMatModules]
 })
 export class ImageCropperComponent implements OnInit {
@@ -21,7 +20,7 @@ export class ImageCropperComponent implements OnInit {
   private _maxWidth: number = 200;
   private _maxHeight: number = 200;
   
-  constructor(
+	constructor(
     public dialogRef: MatDialogRef<ImageCropperComponent>,
     @Inject(MAT_DIALOG_DATA) public image: string,
     private sanitizer: DomSanitizer,

@@ -6,7 +6,6 @@ import { MatInputModule } from '@angular/material/input';
 
 @Component({
   selector: 'app-cropbox-settings',
-  standalone: true,
   imports: [
     FormsModule,
     ReactiveFormsModule,
