@@ -17,7 +17,7 @@ import { MatInputModule } from '@angular/material/input';
 })
 export class CropboxSettingsComponent implements OnInit {
 
-  form: UntypedFormGroup = new FormGroup({});
+  protected form: UntypedFormGroup = new FormGroup({});
 
   private fb = inject(FormBuilder);
   private cropBoxService = inject(CropBoxService);

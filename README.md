@@ -1,6 +1,6 @@
 # ImplementationJscropper
 
-\- Angular 19 with cropperjs.
+\- Angular 20 with cropperjs.
 
 \- See the root folder for example images.
 
@@ -31,3 +31,13 @@ The images will be cropped in rounded style.
 It is possible to set the minimum and maximum crop-box size.
 
 When an image is cropped this application shows a preview of that image.
+
+### **Changelog:**
+
+_June 2025_
+
+\- Upgrade to Angular 20. 
+
+\- Using the keyword **protected** for properties that are only accessible in the template.
+
+\- Using the keyword **readonly** for properties initialized by Angular.

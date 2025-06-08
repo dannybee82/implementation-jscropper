@@ -18,7 +18,7 @@ import { CropboxSettingsComponent } from '../cropbox-settings/cropbox-settings.c
 })
 export class CropperPageComponent implements OnInit {
 
-  previewImageData: WritableSignal<string> = signal('');
+  protected previewImageData: WritableSignal<string> = signal('');
 
   public dialog = inject(MatDialog);
 
