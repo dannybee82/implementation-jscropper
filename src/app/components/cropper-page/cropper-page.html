@@ -10,10 +10,10 @@
         </app-open-file>
     </div>
     <div class="row">
-        @if(this.previewImageData() !== '') {
+        @if(previewImageData() !== '') {
             <img 
                 class="preview-image" 
-                [src]="this.previewImageData()" 
+                [src]="previewImageData()" 
                 alt="Preview Image" 
                 title="preview Image"
             />
@@ -23,7 +23,7 @@
                 class="ms-1"
                 mat-stroked-button 
                 color="warn" 
-                (click)="this.removeImage()" 
+                (click)="removeImage()" 
                 matTooltip="Remove Image">
                     <mat-icon>remove_circle</mat-icon>
                     <span>Remove Image</span>

@@ -3,13 +3,13 @@ import { AllMatModules } from '../../all-mat-modules.module';
 
 @Component({
   selector: 'app-open-file',
-  templateUrl: './open-file.component.html',
-  styleUrls: ['./open-file.component.scss'],
+  templateUrl: './open-file.html',
+  styleUrls: ['./open-file.scss'],
   imports: [
     AllMatModules
   ]
 })
-export class OpenFileComponent {
+export class OpenFile {
 
   readonly buttonText: InputSignal<string> = input<string>('');
   readonly buttonClass: InputSignal<string> = input<string>('');

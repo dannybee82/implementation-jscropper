@@ -1,6 +1,6 @@
 # ImplementationJscropper
 
-\- Angular 21 (with [Angular CLI](https://github.com/angular/angular-cli) version 21.0.0) + cropperjs.
+\- Angular 22 (with [Angular CLI](https://github.com/angular/angular-cli) version 22.0.0) + cropperjs.
 
 \- See the root folder for example images.
 
@@ -16,7 +16,7 @@ When an image is cropped this application shows a preview of that image.
 
 ## Installation + run app
 
-**Angular 21** needs a **Node.js** version of at least _20.19.0_
+**Angular 22** needs a **Node.js** version of at least _22.22.3_
 
 **Command to install**
 
@@ -35,6 +35,20 @@ or shorter:
 _ng s --o_
 
 ### **Changelog:**
+
+_June 2026_
+
+\- Upgrade to _Angular 22_ and upgraded other packages.
+
+\- Migrated _@Injectable_ to _@Service_.
+
+\- Using the default: _ChangeDetectionStrategy.OnPush_ in stead of _ChangeDetectionStrategy.Eager_.
+
+\- Using the latest file naming conventions - and deleting the old schematics from _angular.json_
+
+\- Also using cropperjs version 2 (in stead of version 1).
+
+_November 2025_
 
 \- Upgrade to _Angular 21_ and upgraded other packages.
 

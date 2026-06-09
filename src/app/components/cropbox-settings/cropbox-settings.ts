@@ -1,7 +1,7 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, UntypedFormGroup } from '@angular/forms';
 import { AllMatModules } from '../../all-mat-modules.module';
-import { CropBoxService } from '../../services/crop-box.service';
+import { CropBox } from '../../services/crop-box';
 import { MatInputModule } from '@angular/material/input';
 
 @Component({
@@ -12,15 +12,15 @@ import { MatInputModule } from '@angular/material/input';
     AllMatModules,
     MatInputModule
   ],
-  templateUrl: './cropbox-settings.component.html',
-  styleUrl: './cropbox-settings.component.scss'
+  templateUrl: './cropbox-settings.html',
+  styleUrl: './cropbox-settings.scss'
 })
-export class CropboxSettingsComponent implements OnInit {
+export class CropboxSettings implements OnInit {
 
   protected form: UntypedFormGroup = new FormGroup({});
 
   private fb = inject(FormBuilder);
-  private cropBoxService = inject(CropBoxService);
+  private cropBoxService = inject(CropBox);
 
   ngOnInit(): void {
     this.form = this.fb.group({

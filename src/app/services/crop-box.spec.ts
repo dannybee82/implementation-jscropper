@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
-
-import { CropBoxService } from './crop-box.service';
+import { CropBox } from './crop-box';
+import { describe, beforeEach, it, expect } from 'vitest';
 
 describe('CropBoxService', () => {
-  let service: CropBoxService;
+  let service: CropBox;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(CropBoxService);
+    service = TestBed.inject(CropBox);
   });
 
   it('should be created', () => {

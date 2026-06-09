@@ -1,22 +1,22 @@
 import { Component, inject, OnInit, signal, WritableSignal } from '@angular/core';
-import { OpenFileComponent } from '../open-file/open-file.component';
-import { ImageCropperComponent } from '../image-cropper/image-cropper.component';
+import { OpenFile } from '../open-file/open-file';
+import { ImageCropper } from '../image-cropper/image-cropper';
 import { Observable } from 'rxjs';
 import { MatDialog } from '@angular/material/dialog';
 import { AllMatModules } from '../../all-mat-modules.module';
-import { CropboxSettingsComponent } from '../cropbox-settings/cropbox-settings.component';
+import { CropboxSettings } from '../cropbox-settings/cropbox-settings';
 
 @Component({
   selector: 'app-cropper-page',
   imports: [
-    OpenFileComponent,
-    CropboxSettingsComponent,
+    OpenFile,
+    CropboxSettings,
     AllMatModules
   ],
-  templateUrl: './cropper-page.component.html',
-  styleUrl: './cropper-page.component.scss'
+  templateUrl: './cropper-page.html',
+  styleUrl: './cropper-page.scss'
 })
-export class CropperPageComponent implements OnInit {
+export class CropperPage implements OnInit {
 
   protected previewImageData: WritableSignal<string> = signal('');
 
@@ -30,6 +30,7 @@ export class CropperPageComponent implements OnInit {
 
       this.openAvatarEditor(_file).subscribe((result: string) => {
         if (result) {
+          console.log(result);
           this.loadImagePreview(result);
         }
       });
@@ -37,7 +38,9 @@ export class CropperPageComponent implements OnInit {
   }
 
   openAvatarEditor(image: string): Observable<string> {
-    const dialogRef = this.dialog.open(ImageCropperComponent, {
+    const dialogRef = this.dialog.open(ImageCropper, {
+      width: '800px',  
+      height: '750px',
       maxWidth: '80vw',
       maxHeight: '80vh',
       data: image,

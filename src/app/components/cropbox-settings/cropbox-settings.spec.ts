@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { CropboxSettingsComponent } from './cropbox-settings.component';
+import { CropboxSettings } from './cropbox-settings';
+import { describe, beforeEach, it, expect } from 'vitest';
 
 describe('CropboxSettingsComponent', () => {
-  let component: CropboxSettingsComponent;
-  let fixture: ComponentFixture<CropboxSettingsComponent>;
+  let component: CropboxSettings;
+  let fixture: ComponentFixture<CropboxSettings>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CropboxSettingsComponent]
+      imports: [CropboxSettings]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(CropboxSettingsComponent);
+    fixture = TestBed.createComponent(CropboxSettings);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

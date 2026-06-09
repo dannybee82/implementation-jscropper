@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { CropperPage } from './cropper-page';
+import { describe, beforeEach, it, expect } from 'vitest';
 
-import { OpenFileComponent } from './open-file.component';
-
-describe('OpenFileComponent', () => {
-  let component: OpenFileComponent;
-  let fixture: ComponentFixture<OpenFileComponent>;
+describe('CropperPageComponent', () => {
+  let component: CropperPage;
+  let fixture: ComponentFixture<CropperPage>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ OpenFileComponent ]
+      imports: [CropperPage]
     })
     .compileComponents();
-
-    fixture = TestBed.createComponent(OpenFileComponent);
+    
+    fixture = TestBed.createComponent(CropperPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
